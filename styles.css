@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;1,400&display=swap');
+body {
+    margin: 0px;
+    font-family: 'Karla', sans-serif;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    color: 1px solid black;
+}
+
+.timeline {
+    position: relative;
+    margin: -50px auto;
+    padding: 50px 0;
+    width: 850px;
+    box-sizing: border-box;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 90%;
+    background: #c5c5c5;
+}
+.timeline ul
+{
+    margin: 0;
+    padding: 0;
+}
+.timeline ul li
+{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd)
+{
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(even)
+{
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.content
+{
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgb(212, 194, 235);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(212, 194, 235, 0.2);
+}
+.timeline ul li:nth-child(even):before
+{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgb(212, 194, 235);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(212, 194, 235, 0.2);
+}
+.timeline ul li h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgb(212, 194, 235);
+}
+.timeline ul li p
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.timeline ul li .time h4
+{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+    position: absolute;
+    top: 12px;
+    right: -120px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgb(212, 194, 235);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgb(212, 194, 235);
+}
+.timeline ul li:nth-child(even) .time
+{
+    position: absolute;
+    top: 12px;
+    left: -120px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgb(212, 194, 235);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgb(212, 194, 235);
+}
+.chaton
+{
+    padding: 5px;
+    z-index: 99;
+    cursor: pointer;
+    box-shadow: 0px 0px 22px 0px;
+    position: fixed;
+    bottom: 23px;
+    right: 20px;
+    transition: .5s;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(212, 194, 235);
+}
+.chat-popup
+{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 999;
+    transition: 1s;
+}
+.popup-form
+{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+.popup-form input[type=text],
+.popup-form input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+textarea
+{
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+}
+.popup-form input[type=text]:focus,
+.popup-form input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.popup-form .button
+{
+    background-color: darkslateblue;
+    color: #ffffff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+.popup-form .button:hover,
+.chaton:hover,
+.chaton:hover {
+    transition: .5s;
+}
+.chaton:hover,
+.chaton1:hover {
+    opacity: 1;
+    width: 60px;
+    transition: .5s;
+    
+}
+
+.aligncenter {
+    text-align: center;
+}
+#outter{
+    width: 400px;
+    padding: 0;
+    margin: 0 auto;
+    }
+    #div1, #div2, #div3, #div4{
+    width: 50%;
+    float: left;
+    text-align:center;}
